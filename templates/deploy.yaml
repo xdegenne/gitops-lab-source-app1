@@ -17,8 +17,8 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
-        env:
-        - name: DEMO_GREETING
-          value: "{{ .Values.pg00.prop_a }}"
-        - name: DEMO_CONTEXT
-          value: "{{ .Values.fomKa }}"
+#        env:
+#        - name: DEMO_GREETING
+#          value: "{{ .Values.pg00.prop_a }}"
+#        - name: DEMO_CONTEXT
+#          value: "{{ .Values.fomKa }}"
