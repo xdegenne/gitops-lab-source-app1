@@ -1,4 +1,4 @@
 name: toto
-prerequisites:
-  pg00:
-    type: postgres
+#prerequisites:
+#  pg00:
+#    type: postgres
