@@ -20,3 +20,5 @@ spec:
         env:
         - name: DEMO_GREETING
           value: "{{ .Values.pg00.prop_a }}"
+        - name: DEMO_CONTEXT
+          value: "{{ .Values.fomKa }}"
