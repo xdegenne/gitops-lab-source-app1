@@ -1,4 +1,6 @@
-name: toto
+name: test-smd-pi6
 prerequisites:
   pg00:
-    type: postgres
+    type: RDBMS
+    tags:
+      datastore_cu: test-edu
