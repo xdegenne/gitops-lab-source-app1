@@ -1,0 +1,6 @@
+name: test-smd-pi6
+prerequisites:
+  pg00:
+    type: RDBMS
+    tags:
+      datastore_cu: test-edu

@@ -1,0 +1,5 @@
+apiVersion: v2
+appVersion: v2.4.11
+description: A Helm chart for Argo CD, a declarative, GitOps continuous delivery tool for Kubernetes.
+name: test-smd-pi6
+version: 4.10.9
