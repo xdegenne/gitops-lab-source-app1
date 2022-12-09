@@ -1,0 +1,9 @@
+name: test-smd-pi6
+tags:
+  smd.sap.kosmos.tech/level: DR
+  smd.sap.kosmos.tech/levelwrite: DR
+prerequisites:
+  pg00:
+    type: RDBMS
+    tags:
+      datastore_cu: test-edu
