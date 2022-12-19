@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 1 # tells deployment to run 2 pods matching the template
+  replicas: 0 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
@@ -17,3 +17,10 @@ spec:
         image: nginx:1.14.2
         ports:
         - containerPort: 80
+        volumeMounts:
+          - name: mysecret-vol
+            mountPath: /etc/stuff
+      volumes:
+        - name: mysecret-vol
+          secret:
+            secretName: mysecret
