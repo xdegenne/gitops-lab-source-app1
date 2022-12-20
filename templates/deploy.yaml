@@ -20,7 +20,7 @@ spec:
         volumeMounts:
           - name: mysecret-vol
             mountPath: /etc/stuff
-          - name: real-secret
+          - name: real-secret-vol
             mountPath: /etc/config
       volumes:
         - name: mysecret-vol
