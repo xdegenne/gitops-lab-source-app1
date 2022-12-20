@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: nginx
-  replicas: 1 
+  replicas: 1
   template:
     metadata:
       labels:
@@ -20,7 +20,12 @@ spec:
         volumeMounts:
           - name: mysecret-vol
             mountPath: /etc/stuff
+          - name: real-secret
+            mountPath: /etc/config
       volumes:
         - name: mysecret-vol
           secret:
             secretName: mysecret
+        - name: real-secret-vol
+          secret:
+            secretName: real-secret
