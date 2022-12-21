@@ -22,6 +22,8 @@ spec:
             mountPath: /etc/stuff
           - name: real-secret-vol
             mountPath: /etc/config
+          - name: secret-skipped-vol
+            mountPath: /etc/skipped
       volumes:
         - name: mysecret-vol
           secret:
@@ -29,3 +31,6 @@ spec:
         - name: real-secret-vol
           secret:
             secretName: real-secret
+        - name: secret-skipped-vol
+          secret:
+            secretName: secret-skipped
