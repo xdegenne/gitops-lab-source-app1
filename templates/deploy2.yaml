@@ -21,6 +21,17 @@ spec:
           - name: real-secret-vol
             mountPath: /etc/config/myotherfile.txt
             subPath: myfile.yaml
+      - name: nginx2
+        image: nginx:1.14.2
+        env:
+          - name: FILE_NAME
+            value: myproperties.properties
+        ports:
+        - containerPort: 81
+        volumeMounts:
+          - name: real-secret-vol
+            mountPath: /etc/config/myotherfile2.txt
+            subPathExpr: $(FILE_NAME)
       volumes:
         - name: real-secret-vol
           secret:
